@@ -1,10 +1,13 @@
 /* styles.css */
-
+* {
+  font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+}
 /* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: linear-gradient(to bottom, #c41e3a,rgb(255, 174, 0),white);
   }
   
   header {
@@ -49,6 +52,7 @@ body {
   /* Additional Styles */
   .player-profile {
     display: inline-block;
+    width:300px;
     text-align: center;
     margin-bottom: 20px;
   }
@@ -58,6 +62,7 @@ body {
     height: 150px;
     border-radius: 20%;
     object-fit: cover;
+    border: 1px solid rgba(226, 230, 2, 0.884);
   }
   
   table {
@@ -72,24 +77,17 @@ body {
     text-align: center;
   }
   
-  .image-gallery img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    margin-right: 10px;
-  }
+
 
 html {
     scroll-behavior: smooth;
 }
 
 img {
-    width:50%;
-    height:auto;
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:50px;
+  width:50%;
+  height:50%;
+  margin: 10px auto;
+  align-items: center;
 }
 
 .player-profile p img {
@@ -114,4 +112,78 @@ td.square-gray {
   width:1px;
   height:1px;
   background-color:rgb(165, 163, 163);
+}
+
+
+
+
+#home{
+  text-align: center;
+
+}
+
+
+.distinction-in {
+  display:inline-block;
+  height:250px;
+  width:2px;
+  background-color: black;
+  text-align: top;
+  margin-left:15px;
+}
+
+.distinction h3 {
+  font-size: 25px;
+
+}
+
+nav ul {
+  display:flex;
+}
+.whomadeit {
+  margin-left: auto
+}
+
+.photos-1 ,.photos-2,.photos-3{
+  display:flex;
+  gap:10px;
+}
+
+
+.photos-1,.photos-2,.photos-3 img{
+  height:auto;
+
+}
+
+
+
+.container {
+  display: flex;
+  align-items: center;
+}
+.text {
+  flex: 1;
+}
+.photos-finally {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.photos-finally img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 10px; /* İstenilen boşluk değeri */
+}
+
+.first-image {
+  width:100%;
+  height:100%;
+  max-height: 50%;
+  max-width: 75%;
+  margin: 10px auto
+}
+
+.foto-container {
+  display:flex;
+  justify-content: center;
 }
